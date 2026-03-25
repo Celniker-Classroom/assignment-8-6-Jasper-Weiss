@@ -9,7 +9,11 @@
 // 4) distance(x1, y1, x2, y2): Euclidean distance
 
 // 5) quadratic(a, b, c): roots of ax^2 + bx + c = 0
-
+let count = 0
+function myFunc(){
+  count++
+  return count;
+}
 
 // ----- Helpers -----
 function $(id) { return document.getElementById(id); }
