@@ -15,6 +15,68 @@ function myFunc(){
   return count;
 }
 
+function getRandomNum(max) {
+  max = parseInt(max);
+  if (isNaN(max) || max < 1) return 0;
+  return Math.floor(Math.random() * max) + 1;
+}
+
+function myAdder(x,y) {
+  x = parseInt(x)
+  y = parseInt(y)
+  ADDITION = (x + y)
+  return ADDITION
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function distance(x1, y1, x2, y2) {
+  return Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2);
+}
+
+function quadratic(a, b, c) {
+  let disc = b * b - 4 * a * c;
+  if (disc > 0) {
+      let r1 = (-b + Math.sqrt(disc)) / (2 * a);
+      let r2 = (-b - Math.sqrt(disc)) / (2 * a);
+      return [r1, r2];
+  } else if (disc === 0) {
+      return [-b / (2 * a)];
+  } else {
+      let real = (-b / (2 * a));
+      let imag = (Math.sqrt(-disc) / (2 * a));
+      return [real + "+" + imag + "i", real + "-" + imag + "i"];
+  }
+}
+
+
 // ----- Helpers -----
 function $(id) { return document.getElementById(id); }
 function setText(id, value) { $(id).textContent = String(value); }
